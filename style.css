@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgba(254,195,103,255);
+}
+
+/*HEADER*/
+.logo{
+    padding-top: 5px;
+    width: 280px;
+    height: 100px;
+}
+.menu{
+    font-family:'Indie Flowers', 'Josefin Sans', 'Comics Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 40px;
+    right:8rem;
+}
+
+#cesta,#user{
+    margin-left:1.5rem;
+    font-size: 34px;
+}
+
+#user:hover{
+    margin-left:1.5rem;
+    font-size: 44px;
+    cursor: pointer;
+    transition-delay: 2ms;
+}
+    
+#cesta:hover{
+    margin-left:1.5rem;
+    font-size: 44px;
+    cursor: pointer;
+    transition-delay: 2ms;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 1rem;
+}
+
+a:hover{
+  text-decoration: underline;
+  color:black;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top:0;
+  margin-left: 1rem;
+  transition-delay: 2ms;
+  }
+/*--FIN HEADER--*/
+
+/*CESTA*/
+.cart-items-container{
+    position: fixed;
+    top: -100px; right: -105%;
+    width: 25rem;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 120%;
+    z-index: 1200;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .cart-items-container.active{
+    right: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+  
+  .cart-items-container #cruz{
+    position: absolute;
+    top: 7rem;
+    right: 2.7rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .cart-items-container #cruz:hover{
+    color: #4dcec2;
+    font-size: 3.5rem;
+  }
+  
+  .cart-items-container .title{
+    font-size: 2.5rem;
+    color: #4dcec2;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+  
+  .cart-items-container .cart-item{
+    position: relative;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .cart-items-container .cart-item .fa-times:hover{
+    color: rgb(223, 70, 70);
+    font-size: 2.5rem;
+  }
+  
+  .cart-items-container .cart-item img{
+    height: 7rem;
+  }
+  
+  .cart-items-container .cart-item .content h3{
+    font-size: 1.3rem;
+    color: black;
+    padding-bottom: .5rem;
+  }
+  
+  .cart-items-container .cart-item .content .price{
+    font-size: 1.2rem;
+    color:black;
+    text-align: left;
+  }
+  /*--FIN CESTA--*/
+  
+  
+  /*FOOTER*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	/*font: bold 40px sans-serif;*/
+	padding: 30px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+#texto-left{
+  color:  #ffffff;
+	font: normal 30px 'Open Sans', cursive;
+  margin-left:5rem;
+  margin-top: 0.625rem;
+}
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 1px;
+	padding: 0;
+}
+
+#text:hover{
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:40;
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+#mail:hover{
+  text-decoration: none;
+  color: #90d4ff;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.footer-distributed .footer-center p a{
+	color:#ffffff;
+	text-decoration: none;
+  margin-left: 1px;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+#texto-right{
+  color:  #ffffff;
+	font: normal 30px 'Open Sans', cursive;
+  margin-left:1.8rem;
+  text-align: center;
+  margin-top: 0.625rem;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 1.8px;
+  margin-left: 2.3rem;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+/*FIN FOOTER*/
